@@ -1,0 +1,83 @@
+/******** Title page CSS ************/
+
+html, body { height:100%; margin:0; padding:0; }
+
+/*
+        The wedge is used for vertical centering. Its height is set to 50% of the body element
+        minus half the height of region in the centre where your vertically centered text/images
+        will appear.
+*/
+.wedge
+    {float:left; height:50%; margin-bottom:-200px;}
+
+.container
+    {clear:both; height:400px; position:relative; overflow: hidden;}
+
+.container table, tr, th
+    {height:400px; width:100%; text-align:center; overflow: hidden;}
+
+/******** Generic Styles ***********************/
+
+p { text-indent: 1.2em; margin-top:0; margin-bottom: 0; }
+
+h2
+    { font-size: 2em; }
+
+h4
+    { font-size: 1.2em; }
+
+
+/*********** Styles for Dropcaps **************/
+
+.dropcaps p { text-indent: 0; margin-bottom: 0; margin-top: 0; }
+.dropcaps p.initial:first-letter
+    {
+        font-size: 4em;
+        line-height: 0.6em;
+        float: left;
+        width: 0.8em;
+    }
+
+.dropcaps span.firstwords
+    {
+        text-transform:uppercase;
+        font-size: 0.75em
+    }
+
+/* Add some padding between the two paragraphs */
+.dropcaps p.initial + p
+{ clear: left; padding-top: 0.5em; }
+
+.dropcaps img {
+    float: left;
+}
+
+/********** Styles for floats ************/
+.left-float {
+    float: left;
+    text-align: center;
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.right-float {
+    float: right;
+    text-align: center;
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    max-width: 250px;
+}
+
+/********* Styles for poetry ************/
+.poetry p {
+  margin: 0;
+  padding-left: 2em;
+  text-indent: -2em;
+  text-align: left;
+}
+
+.poetry p.first {
+  margin-top: 1em;
+}
