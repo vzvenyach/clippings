@@ -7,14 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-   "web2remarkable": "./index.js"
- },
+    "web2remarkable": "./index.js"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",
     "dompurify": "^2.0.8",
     "jsdom": "^16.2.1",
-    "readability": "git+https://github.com/mozilla/readability.git"
+    "readability": "git+https://github.com/mozilla/readability.git",
+    "remarkable-typescript": "^1.0.5"
   }
 }
