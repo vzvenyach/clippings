@@ -48,7 +48,7 @@ function articles2ePub(articles, outfile) {
   let optArray = [
     "-o",
     outfile,
-    "--css=lib/styles.css",
+    `--css=${__dirname}/lib/styles.css`,
     "--from=html",
     "--metadata",
     "title=Generated ePub"
