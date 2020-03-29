@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const axios = require("axios");
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
@@ -82,7 +84,20 @@ function articles2ePub(articles, outfile) {
 
 /**
  * Command line args and function calls
- **/ 
+ **/
+
+// usage represents the help guide
+const usage = function() {
+  const usageText = `
+  clippings converts websites into an epub.
+
+  usage:
+    node main.js <epub_file> <url>...
+  `;
+
+  console.log(usageText);
+};
+
 if (process.argv.length > 3) {
   const outfile = process.argv[2];
   const urls = process.argv.slice(3, process.argv.length + 1);
@@ -90,5 +105,6 @@ if (process.argv.length > 3) {
     articles2ePub(articles, outfile);
   });
 } else {
+  usage();
   console.log("Fix the command arguments");
 }

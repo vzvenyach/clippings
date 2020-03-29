@@ -1,16 +1,16 @@
 {
-  "name": "web2remarkable",
-  "version": "1.0.0",
-  "description": "",
+  "name": "clippings",
+  "version": "0.1.0",
+  "description": "My daily clippings",
   "main": "index.js",
+  "bin": {
+    "clippings": "./main.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "bin": {
-    "web2remarkable": "./index.js"
-  },
-  "author": "",
-  "license": "ISC",
+  "author": "V. David Zvenyach <dave@esq.io>",
+  "license": "blueoak-1.0",
   "dependencies": {
     "axios": "^0.19.2",
     "dompurify": "^2.0.8",
