@@ -10,15 +10,20 @@
     "lib": "./lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "V. David Zvenyach <dave@esq.io>",
   "license": "blueoak-1.0",
   "dependencies": {
     "axios": "^0.19.2",
+    "commander": "^5.0.0",
     "dompurify": "^2.0.8",
     "jsdom": "^16.2.1",
     "readability": "git+https://github.com/mozilla/readability.git",
     "remarkable-typescript": "^1.0.5"
+  },
+  "devDependencies": {
+    "jest": "^25.2.4",
+    "moxios": "^0.4.0"
   }
 }
